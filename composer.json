@@ -3,37 +3,63 @@
     "description": "Install Social project template for composer based Open Social projects upstream on Pantheon.",
     "type": "project",
     "license": "GPL-2.0+",
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
+        "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "d3": {
+            "type": "package",
+            "package": {
+                "name": "d3/d3",
+                "version": "v3.5.17",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "highlightjs": {
+            "type": "package",
+            "package": {
+                "name": "components/highlightjs",
+                "version": "9.7.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
+                    "type": "zip"
+                }
+            }
         }
-    ],
+    },
     "require": {
         "php": ">=7.0.8",
+        "components/highlightjs": "9.7.*",
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
+        "d3/d3": "3.5.*",
+        "doctrine/cache": "1.6.1",
+        "doctrine/collections": "1.4.0",
+        "doctrine/common": "2.7.2",
+        "doctrine/inflector": "1.1.0",
         "drupal-composer/drupal-scaffold": "2.4.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
         "drupal/core": "^8",
         "drupal/simple_block": "^1.0@beta",
-        "drush/drush": "~8",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "rvtraveller/qs-composer-installer": "^1.1",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
-        "pantheon-systems/quicksilver-pushback": "~1",
-        "webflo/drupal-core-strict": "^8",
+        "drush/drush": "~8",
         "goalgorilla/open_social": "^2.0",
-        "doctrine/cache": "1.6.1",
-        "doctrine/collections": "1.4.0",
-        "doctrine/common": "2.7.2",
-        "doctrine/inflector": "1.1.0"
+        "oomphinc/composer-installers-extender": "^1.1",
+        "pantheon-systems/quicksilver-pushback": "~1",
+        "rvtraveller/qs-composer-installer": "^1.1",
+        "webflo/drupal-core-strict": "^8"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.2",
