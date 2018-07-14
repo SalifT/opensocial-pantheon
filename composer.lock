@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0870fc6b662adf36d69cdf0b84accd0",
+    "content-hash": "e9b9ddd1446e29c8e1b96a6a232ab656",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3433,6 +3433,7 @@
                     }
                 },
                 "patches_applied": {
+                    "like_and_dislike uses constructor instead of a interface: fix webprofiler": "https://www.drupal.org/files/issues/like_and_dislike-use_interface-2914433-2-D8.patch",
                     "Fix preview on node": "https://www.drupal.org/files/issues/2848080-2-preview-fails-on-node.patch"
                 }
             },
