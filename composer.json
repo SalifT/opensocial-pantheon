@@ -126,6 +126,11 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "enable-patching": true,
+        "patches": {
+            "drupal/like_and_dislike": {
+            "like_and_dislike uses constructor instead of a interface: fix webprofiler": "https://www.drupal.org/files/issues/like_and_dislike-use_interface-2914433-2-D8.patch"
+            }
+          },
         "build-env": {
             "install-cms": [
                 "drush site-install standard --account-mail={account-mail} --account-name={account-name} --account-pass={account-pass} --site-mail={site-mail} --site-name={site-name} --yes",
