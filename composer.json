@@ -128,7 +128,10 @@
         "enable-patching": true,
         "patches": {
             "drupal/like_and_dislike": {
-            "like_and_dislike uses constructor instead of a interface: fix webprofiler": "https://www.drupal.org/files/issues/like_and_dislike-use_interface-2914433-2-D8.patch"
+                "like_and_dislike uses constructor instead of a interface: fix webprofiler": "https://www.drupal.org/files/issues/like_and_dislike-use_interface-2914433-2-D8.patch"
+            },
+            "drupal/devel": {
+                "fix count(): Parameter must be an array": "https://www.drupal.org/files/issues/2018-06-25/devel-webprofiler-count-warning-2951821-17.patch"
             }
           },
         "build-env": {
